@@ -1,0 +1,32 @@
+{% extends 'front_office.html.twig' %}
+
+{% block body %}
+
+    <!-- Login Form Start -->
+    <div class="container-fluid bg-light d-flex align-items-center" style="height: 100vh;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-8">
+                    <div class="bg-white p-4 p-sm-5 rounded shadow">
+                        <h2 class="text-center mb-4">Login</h2>
+                        <form id="loginForm">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="loginEmail" placeholder="Email" required>
+                                <label for="loginEmail">Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="loginPassword" placeholder="Password" required minlength="6">
+                                <label for="loginPassword">Password</label>
+                            </div>
+                            <div id="login-error-message" class="text-danger text-center mb-3" style="display: none;"></div>
+                            <button type="submit" class="btn btn-primary w-100 py-3">Log In</button>
+                        </form>
+                        <p class="text-center mt-4 mb-0">Don't have an account? <a href="{{path('app_signup')}}">Sign up here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Form End -->
+
+{% endblock %}

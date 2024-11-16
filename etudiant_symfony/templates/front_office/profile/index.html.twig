@@ -1,0 +1,185 @@
+{% extends 'front_office.html.twig' %}
+
+    {% block Testimonial %}
+    {% endblock %}
+    {% block Categories %}
+    {% endblock %}
+    {% block About %}
+    {% endblock %}
+    
+    
+    {% block Carousel %}
+  <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Profile</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">profile</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+    {% endblock %}
+    {% block Team %}
+
+<!-- Profile Section with Tabs and Styled Tables -->
+<div class="container my-5">
+
+    <!-- Tabs Navigation -->
+    <ul class="nav nav-tabs justify-content-center mb-4" id="profileTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="clubs-tab" data-bs-toggle="tab" href="#clubs" role="tab" aria-controls="clubs" aria-selected="true">Clubs</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="evenements-tab" data-bs-toggle="tab" href="#evenements" role="tab" aria-controls="evenements" aria-selected="false">Événements</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="formations-tab" data-bs-toggle="tab" href="#formations" role="tab" aria-controls="formations" aria-selected="false">Formations</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="livres-tab" data-bs-toggle="tab" href="#livres" role="tab" aria-controls="livres" aria-selected="false">Livres</a>
+        </li>
+    </ul>
+
+    <!-- Tabs Content -->
+    <div class="tab-content shadow rounded p-4" id="profileTabContent">
+
+        <!-- Clubs Tab Pane -->
+        <div class="tab-pane fade show active" id="clubs" role="tabpanel" aria-labelledby="clubs-tab">
+            <h4 class="mb-3">My Clubs</h4>
+            <table class="table table-hover shadow-sm rounded">
+                <thead class="table-primary">
+                    <tr>
+                        <th scope="col">Image</th>
+                        <th scope="col">Club Name</th>
+                        <th scope="col">date</th>
+                        <th scope="col">local</th>
+                        <th scope="col">Joined Date</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="front_office/img/course-2.jpg" alt="Club" class="img-thumbnail rounded" width="60" height="60"></td>
+                        <td>Photography Club</td>
+                        <td>2023-01-10 22:00</td>
+                        <td>ariena</td>
+                        <td>2023-01-10 10:00</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="front_office/img/course-2.jpg" alt="Club" class="img-thumbnail rounded" width="60" height="60"></td>
+                        <td>Debate Society</td>
+                        <td>2023-01-10 22:00</td>
+                        <td>ariena</td>
+                        <td>2023-01-10 10:00</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Événements Tab Pane -->
+        <div class="tab-pane fade" id="evenements" role="tabpanel" aria-labelledby="evenements-tab">
+            <h4 class="mb-3">My Événements</h4>
+            <table class="table table-hover shadow-sm rounded">
+                <thead class="table-primary">
+                    <tr>
+                        <th scope="col">Image</th>
+                        <th scope="col">Event Name</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">duree</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="front_office/img/course-2.jpg" alt="Event" class="img-thumbnail rounded" width="60" height="60"></td>
+                        <td>Annual Science Fair</td>
+                        <td>2023-06-12</td>
+                        <td>2h</td>
+                        <td>Science Hall</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Formations Tab Pane -->
+        <div class="tab-pane fade" id="formations" role="tabpanel" aria-labelledby="formations-tab">
+            <h4 class="mb-3">My Formations</h4>
+            <table class="table table-hover shadow-sm rounded">
+                <thead class="table-primary">
+                    <tr>
+                        <th scope="col">Image</th>
+                        <th scope="col">Formation Title</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Duree</th>
+                        <th scope="col">local</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="front_office/img/course-2.jpg" alt="Formation" class="img-thumbnail rounded" width="60" height="60"></td>
+                        <td>Advanced JavaScript</td>
+                        <td>2023-03-20</td>
+                        <td>2h</td>    
+                        <td>ariena</td>
+
+                        <td>
+                            <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Livres Tab Pane -->
+        <div class="tab-pane fade" id="livres" role="tabpanel" aria-labelledby="livres-tab">
+            <h4 class="mb-3">My Livres</h4>
+            <table class="table table-hover shadow-sm rounded">
+                <thead class="table-primary">
+                    <tr>
+                        <th scope="col">Image</th>
+                        <th scope="col">Book Title</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Date Borrowed</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="front_office/img/course-1.jpg" alt="Book" class="img-thumbnail rounded" width="60" height="60"></td>
+                        <td>Introduction to Machine Learning</td>
+                        <td>John K. Smith</td>
+                        <td>2023-02-10</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+    
+    {% endblock %}
+

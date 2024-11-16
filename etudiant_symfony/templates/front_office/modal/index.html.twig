@@ -1,0 +1,28 @@
+<!-- Course Modal Start -->
+<div class="modal fade" id="courseModal" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="courseModalLabel">Web Design & Development Course for Beginners</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="position-relative overflow-hidden text-center">
+                    <!-- Image source can be set dynamically -->
+                    <img class="img-fluid centered-image" id="courseImage" src="{{ asset('front_office/img/course-1.jpg') }}" alt="Course Image">
+                </div>
+
+                <p id="courseDescription">Learn the fundamentals of web design and development in this beginner-friendly course. Dive into HTML, CSS, JavaScript, and build your first website from scratch!</p>
+                <ul class="list-unstyled">
+                    <li><strong>Instructor:</strong> <span id="courseInstructor">John Doe</span></li>
+                    <li><strong>Time:</strong> <span id="courseTime">10:00 Hrs</span></li>
+                    <li><strong>Location:</strong> <span id="courseLocation">C01</span></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="reserveBtn">Reserve</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Course Modal End -->       

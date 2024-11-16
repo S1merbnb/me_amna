@@ -1,0 +1,39 @@
+{% extends 'front_office.html.twig' %}
+
+{% block body %}
+    <!-- Signup Form Start -->
+    <div class="container-fluid bg-light d-flex align-items-center" style="height: 100vh;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-8">
+                    <div class="bg-white p-4 p-sm-5 rounded shadow">
+                        <h2 class="text-center mb-4">Sign Up</h2>
+                        <form id="signupForm">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+                                <label for="name">Full Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="password" placeholder="Password" required minlength="6">
+                                <label for="password">Password</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="confirm_password" placeholder="Confirm Password" required minlength="6">
+                                <label for="confirm_password">Confirm Password</label>
+                            </div>
+                            <div id="error-message" class="text-danger text-center mb-3" style="display: none;"></div>
+                            <button type="submit" class="btn btn-primary w-100 py-3">Create Account</button>
+                        </form>
+                        <p class="text-center mt-4 mb-0">Already have an account? <a href="{{path('app_login')}}">Login here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Signup Form End -->
+
+{% endblock %}
